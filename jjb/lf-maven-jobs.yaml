@@ -150,6 +150,7 @@
     stream: master
     submodule-recursive: true
     submodule-timeout: 10
+    submodule-disable: false
 
     nexus_iq_scan_patterns:
       - '**/*.ear'
@@ -220,6 +221,7 @@
           branch: '$GERRIT_BRANCH'
           submodule-recursive: '{submodule-recursive}'
           submodule-timeout: '{submodule-timeout}'
+          submodule-disable: '{submodule-disable}'
           choosing-strategy: default
 
     triggers:
@@ -260,6 +262,7 @@
           branch: 'refs/heads/{branch}'
           submodule-recursive: '{submodule-recursive}'
           submodule-timeout: '{submodule-timeout}'
+          submodule-disable: '{submodule-disable}'
           choosing-strategy: default
           jenkins-ssh-credential: '{jenkins-ssh-credential}'
 
@@ -304,6 +307,7 @@
     stream: master
     submodule-recursive: true
     submodule-timeout: 10
+    submodule-disable: false
 
     gerrit_merge_triggers:
       - change-merged-event
@@ -351,6 +355,7 @@
           branch: '{branch}'
           submodule-recursive: '{submodule-recursive}'
           submodule-timeout: '{submodule-timeout}'
+          submodule-disable: '{submodule-disable}'
           choosing-strategy: default
           jenkins-ssh-credential: '{jenkins-ssh-credential}'
 
@@ -385,6 +390,7 @@
           branch: '{branch}'
           submodule-recursive: '{submodule-recursive}'
           submodule-timeout: '{submodule-timeout}'
+          submodule-disable: '{submodule-disable}'
           choosing-strategy: default
           jenkins-ssh-credential: '{jenkins-ssh-credential}'
 
@@ -430,6 +436,7 @@
     stream: master
     submodule-recursive: true
     submodule-timeout: 10
+    submodule-disable: false
 
     gerrit_verify_triggers:
       - patchset-created-event:
@@ -476,6 +483,7 @@
           branch: '$GERRIT_BRANCH'
           submodule-recursive: '{submodule-recursive}'
           submodule-timeout: '{submodule-timeout}'
+          submodule-disable: '{submodule-disable}'
           choosing-strategy: gerrit
 
     triggers:
@@ -509,6 +517,7 @@
           branch: '$sha1'
           submodule-recursive: '{submodule-recursive}'
           submodule-timeout: '{submodule-timeout}'
+          submodule-disable: '{submodule-disable}'
           choosing-strategy: default
           jenkins-ssh-credential: '{jenkins-ssh-credential}'
 
@@ -550,6 +559,7 @@
     stream: master
     submodule-recursive: true
     submodule-timeout: 10
+    submodule-disable: false
 
     gerrit_merge_triggers:
       - change-merged-event
@@ -615,6 +625,7 @@
           branch: '$GERRIT_BRANCH'
           submodule-recursive: '{submodule-recursive}'
           submodule-timeout: '{submodule-timeout}'
+          submodule-disable: '{submodule-disable}'
           choosing-strategy: default
 
     triggers:
@@ -650,6 +661,7 @@
           branch: 'refs/heads/{branch}'
           submodule-recursive: '{submodule-recursive}'
           submodule-timeout: '{submodule-timeout}'
+          submodule-disable: '{submodule-disable}'
           choosing-strategy: default
           jenkins-ssh-credential: '{jenkins-ssh-credential}'
 
@@ -706,6 +718,7 @@
     stream: master
     submodule-recursive: true
     submodule-timeout: 10
+    submodule-disable: false
 
     gerrit_release_triggers:
       - comment-added-contains-event:
@@ -785,6 +798,7 @@
           branch: '$GERRIT_BRANCH'
           submodule-recursive: '{submodule-recursive}'
           submodule-timeout: '{submodule-timeout}'
+          submodule-disable: '{submodule-disable}'
           choosing-strategy: default
 
     triggers:
@@ -819,6 +833,7 @@
           branch: '{branch}'
           submodule-recursive: '{submodule-recursive}'
           submodule-timeout: '{submodule-timeout}'
+          submodule-disable: '{submodule-disable}'
           choosing-strategy: default
           jenkins-ssh-credential: '{jenkins-ssh-credential}'
 
@@ -864,6 +879,7 @@
     stream: master
     submodule-recursive: true
     submodule-timeout: 10
+    submodule-disable: false
 
     gerrit_sonar_triggers:
       - comment-added-contains-event:
@@ -1003,6 +1019,7 @@
           branch: $GERRIT_BRANCH
           submodule-recursive: '{submodule-recursive}'
           submodule-timeout: '{submodule-timeout}'
+          submodule-disable: '{submodule-disable}'
           choosing-strategy: default
 
 - job-template:
@@ -1025,6 +1042,7 @@
           branch: '$sha1'
           submodule-recursive: '{submodule-recursive}'
           submodule-timeout: '{submodule-timeout}'
+          submodule-disable: '{submodule-disable}'
           choosing-strategy: default
           jenkins-ssh-credential: '{jenkins-ssh-credential}'
 
@@ -1069,6 +1087,7 @@
     stream: master
     submodule-recursive: true
     submodule-timeout: 10
+    submodule-disable: false
 
     gerrit_verify_triggers:
       - patchset-created-event:
@@ -1128,6 +1147,7 @@
           branch: '$GERRIT_BRANCH'
           submodule-recursive: '{submodule-recursive}'
           submodule-timeout: '{submodule-timeout}'
+          submodule-disable: '{submodule-disable}'
           choosing-strategy: gerrit
 
     triggers:
@@ -1162,6 +1182,7 @@
           branch: '$sha1'
           submodule-recursive: '{submodule-recursive}'
           submodule-timeout: '{submodule-timeout}'
+          submodule-disable: '{submodule-disable}'
           choosing-strategy: default
           jenkins-ssh-credential: '{jenkins-ssh-credential}'
 
@@ -1202,6 +1223,7 @@
     stream: master
     submodule-recursive: true
     submodule-timeout: 10
+    submodule-disable: false
 
     gerrit_verify_triggers:
       - comment-added-contains-event:
@@ -1255,6 +1277,7 @@
           branch: '$GERRIT_BRANCH'
           submodule-recursive: '{submodule-recursive}'
           submodule-timeout: '{submodule-timeout}'
+          submodule-disable: '{submodule-disable}'
           choosing-strategy: gerrit
 
     triggers:
